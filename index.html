@@ -13,6 +13,40 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+  <script type="text/javascript">
+    // worker.js
+  
+      addEventListener('fetch', (event) => {
+        event.respondWith(handleRequest(event.request));
+      });
+      
+      async function handleRequest(request) {
+        const response = await fetch(url.toString(), request);
+      
+        return new HTMLRewriter().on('link[rel="stylesheet"]', new cssInline('href')).transform(response);
+      }
+      
+      async function fetchCSS(url) {
+        const response = await fetch(url);
+        return response.text();
+      }
+      
+      class cssInline {
+        constructor(attributeName) {
+          this.attributeName = attributeName;
+        }
+      
+        async element(element) {
+          const attribute = element.getAttribute(this.attributeName);
+          if (attribute) {
+            const styles = await fetchCSS(attribute);
+              element.replace(`<style>${styles}</style>`, {
+                html: true,
+              });
+          }
+        }
+      }
+      </script>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/nu-pizzeria.webflow.css" rel="stylesheet" type="text/css">
