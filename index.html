@@ -17,10 +17,13 @@
   <!-- <link href="css/webflow.css" rel="stylesheet" type="text/css"> -->
   <!-- <link href="css/nu-pizzeria.webflow.css" rel="stylesheet" type="text/css"> -->
 
-  <!-- <link rel="preload" href="fonts/OpenSans-VariableFont_wdthwght.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
   <!-- <link rel="preload" href="fonts/Comfortaa-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
-  <link rel="preload" href="fonts/OpenSans-VariableFont_wdthwght.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Comfortaa-VariableFont_wght.woff2" as="font" type="font/woff2">
+  <!-- <link rel="preload" href="fonts/OpenSans-VariableFont_wdthwght.ttf" as="font" type="font/ttf" crossorigin="anonymous"> -->
+  <!-- <link rel="preload" href="fonts/Comfortaa-VariableFont_wght.woff2" as="font" type="font/woff2"> -->
+  <!-- <link rel="preload" href="fonts/OpenSans-VariableFont_wdthwght.woff2" as="font" type="font/woff2"> -->
+  <link rel="preload" href="fonts/Comfortaa-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" type="font/woff" crossorigin>
+
   <link rel="preload" href="images/pizza.webp" as="image">
   
   <style>
@@ -2237,7 +2240,8 @@ textarea.w-select {
 body {
   background-color: var(--cream);
   color: #333;
-  font-family: Opensans Variablefont Wdth Wght, sans-serif;
+  /* font-family: Opensans Variablefont Wdth Wght, sans-serif; */
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -2300,7 +2304,8 @@ p {
   margin-left: 12px;
   margin-right: 12px;
   padding: 12px 24px;
-  font-family: Comfortaa Variablefont Wght, sans-serif;
+  /* font-family: Comfortaa Variablefont Wght, sans-serif; */
+  font-family: Comfortaa, sans-serif;
   text-decoration: none;
 }
 
@@ -2351,7 +2356,8 @@ p {
   border-radius: 5px;
   margin-top: 2rem;
   padding: 22px 60px;
-  font-family: Comfortaa Variablefont Wght, sans-serif;
+  /* font-family: Comfortaa Variablefont Wght, sans-serif; */
+  font-family: Comfortaa, sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
@@ -2412,7 +2418,8 @@ p {
 
 .secondary-heading {
   margin-bottom: 2rem;
-  font-family: Comfortaa Variablefont Wght, sans-serif;
+  /* font-family: Comfortaa Variablefont Wght, sans-serif; */
+  font-family: Comfortaa, sans-serif;
   line-height: 1.2;
 }
 
@@ -2654,7 +2661,8 @@ p {
   color: #fff;
   text-align: center;
   margin-top: 0;
-  font-family: Comfortaa Variablefont Wght, sans-serif;
+  /* font-family: Comfortaa Variablefont Wght, sans-serif; */
+  font-family: Comfortaa, sans-serif;
   line-height: 1.2;
 }
 
@@ -2695,7 +2703,8 @@ p {
 .footer-heading {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: Comfortaa Variablefont Wght, sans-serif;
+  /* font-family: Comfortaa Variablefont Wght, sans-serif; */
+  font-family: Comfortaa, sans-serif;
   font-size: 12px;
 }
 
@@ -2985,18 +2994,22 @@ p {
 
 
 @font-face {
-  font-family: 'Opensans Variablefont Wdth Wght';
+  /* font-family: 'Opensans Variablefont Wdth Wght'; */
   /* src: url('fonts/OpenSans-VariableFont_wdthwght.ttf') format('truetype'); */
-  src: url('fonts/OpenSans-VariableFont_wdthwght.woff2') format('woff2');
+  /* src: url('fonts/OpenSans-VariableFont_wdthwght.woff2') format('woff2'); */
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.woff') format('woff');
   font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Comfortaa Variablefont Wght';
+  /* font-family: 'Comfortaa Variablefont Wght'; */
   /* src: url('fonts/Comfortaa-VariableFont_wght.ttf') format('truetype'); */
-  src: url('fonts/Comfortaa-VariableFont_wght.woff2') format('woff2');
+  /* src: url('fonts/Comfortaa-VariableFont_wght.woff2') format('woff2'); */
+  font-family: 'Comfortaa';
+  src: url('fonts/Comfortaa-Regular.woff') format('woff');
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
