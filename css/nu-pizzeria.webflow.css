@@ -786,7 +786,7 @@ p {
 
 @font-face {
   font-family: 'Opensans Variablefont Wdth Wght';
-  src: url('../fonts/OpenSans-VariableFont_wdthwght.ttf') format('truetype');
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
   font-weight: 300 800;
   font-style: normal;
   font-display: swap;
@@ -794,7 +794,7 @@ p {
 
 @font-face {
   font-family: 'Comfortaa Variablefont Wght';
-  src: url('../fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+  src: url('../fonts/Comfortaa-Regular.woff2') format('woff2');
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
