@@ -789,7 +789,7 @@ p {
   src: url('../fonts/OpenSans-VariableFont_wdthwght.ttf') format('truetype');
   font-weight: 300 800;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -797,5 +797,5 @@ p {
   src: url('../fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
   font-weight: 300 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
