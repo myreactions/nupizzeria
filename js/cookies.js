@@ -893,7 +893,7 @@
         close: i,
         submit: a
       } = S;
-      o instanceof Element && ("key" in t && t.key !== "Enter" || (o.closest(r) ? (this.emit("allow"), this.close()) : o.closest(s) ? (this.emit("deny"), this.close()) : o.closest(i) ? this.close() : o.closest(a) && ((c = this.form) == null || c.submit())))
+      o instanceof Element && ("key" in t && t.key !== "enter" || (o.closest(r) ? (this.emit("allow"), this.close()) : o.closest(s) ? (this.emit("deny"), this.close()) : o.closest(i) ? this.close() : o.closest(a) && ((c = this.form) == null || c.submit())))
     }
     handleFormSubmit(t) {
       this.emit("formsubmit", t), this.close()
@@ -1203,7 +1203,7 @@
         manager: r,
         preferences: s
       } = this;
-      t instanceof Element && ("key" in e && e.key !== "Enter" || t.closest(S.openPreferences) && (o.close(), r.close(), s.open(), d.alert("Open Preferences button was clicked.", "info")))
+      t instanceof Element && ("key" in e && e.key !== "enter" || t.closest(S.openPreferences) && (o.close(), r.close(), s.open(), d.alert("Open Preferences button was clicked.", "info")))
     }
     push(...e) {
       e.forEach(t => t(this))
