@@ -881,7 +881,7 @@
         element: t,
         form: o
       } = this;
-      t && (t.addEventListener("click", r => this.handleMouseAndKeyboard(r)), t.addEventListener("keydown", r => this.handleMouseAndKeyboard(r)), o == null || o.on("submit", r => this.handleFormSubmit(r)))
+      t && (t.addEventListener("click", r => this.handleMouseAndKeyboard(r)), t.addEventListener("keyup", r => this.handleMouseAndKeyboard(r)), o == null || o.on("submit", r => this.handleFormSubmit(r)))
     }
     handleMouseAndKeyboard(t) {
       var c;
@@ -1178,7 +1178,7 @@
         banner: a,
         manager: c
       } = this;
-      document.addEventListener("click", l => this.handleMouseAndKeyboard(l)), document.addEventListener("keydown", l => this.handleMouseAndKeyboard(l)), a.isReady() ? s.storeBannerText(a.element) : a.on("ready", l => s.storeBannerText(l)), i.on("updateconsents", () => {
+      document.addEventListener("click", l => this.handleMouseAndKeyboard(l)), document.addEventListener("keyup", l => this.handleMouseAndKeyboard(l)), a.isReady() ? s.storeBannerText(a.element) : a.on("ready", l => s.storeBannerText(l)), i.on("updateconsents", () => {
         r.forEach(l => {
           var u;
           return (u = this[l].form) == null ? void 0 : u.updateCheckboxes()
